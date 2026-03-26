@@ -21,20 +21,23 @@
   <link rel="icon" href="/favicon.ico">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://use.typekit.net/evr0zre.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="scrollImages.css">
 
   <!-- Scripts -->
   <script src="script.js" defer></script>
+  <script src="scroll.js" defer></script>
 </head>
 <body>
     <nav>
-        <p style="font-weight: 800;">TEAM JANKOWSKI</p> <!-- replace with svg logo -->
+        <a href="index.html">
+            <p style="font-weight: 800;">TEAM JANKOWSKI</p>
+        </a>
         <div class="container">
             <a href="#infoSection">Usługi</a>
-            <a href="#">Galeria</a>
-            <a href="#">Kontakt</a>
+            <a href="gallery.html">Galeria</a>
+            <a href="#contactSection" id="contactBtn">Kontakt</a>
         </div>
     </nav>
 
@@ -52,13 +55,13 @@
         <div class="container" id="info">
             <div id="infoText">
                 <h2>Wykończenia wnętrz</h2>
-                <p>Oferujemy kompleksowe wykończenia wnętrz, w tym gładzenie ścian, malowanie, tapetowanie, wykonywanie tynków dekoracyjnych oraz profesjonalne kładzenie podłóg.</p>
+                <p>Oferujemy kompleksowe wykończenia wnętrz, w tym gładzenie ścian, malowanie, tapetowanie, wykonywanie tynków dekoracyjnych oraz profesjonalne układanie podłóg.</p>
             </div>
-            <div id="infoImage"></div>
+            <div class="infoImage" id="img1"></div>
         </div>
         
         <div class="container" id="info">
-            <div id="infoImage"></div>
+            <div class="infoImage" id="img2"></div>
             <div id="infoText">
                 <h2>Usługi glazurnicze</h2>
                 <p>Świadczymy kompleksowe usługi glazurnicze, obejmujące układanie płytek ceramicznych, gresu oraz mozaiki w kuchniach, łazienkach i innych pomieszczeniach.</p>
@@ -70,7 +73,7 @@
                 <h2>Prace ogólnoremontowe</h2>
                 <p>Wykonujemy kompleksowe prace ogólnoremontowe, obejmujące modernizację i odświeżanie wnętrz, naprawy instalacji, wymianę podłóg oraz malowanie i wykończenie ścian.</p>
             </div>
-            <div id="infoImage"></div>
+            <div class="infoImage" id="img3"></div>
         </div>
     </section>
 
@@ -87,21 +90,59 @@
             <div class="card" id="img8"></div>
             <div class="card" id="img9"></div>
             <div class="card" id="img10"></div>
+            <div class="card" id="img11"></div>
+            <div class="card" id="img12"></div>
+            <div class="card" id="img13"></div>
+            <div class="card" id="img14"></div>
+            <div class="card" id="img15"></div>
+            <div class="card" id="img16"></div>
+            <div class="card" id="img17"></div>
+            <div class="card" id="img18"></div>
+            <div class="card" id="img19"></div>
+            <div class="card" id="img20"></div>
+            <div class="card" id="img21"></div>
+            <div class="card" id="img22"></div>
       
         </div>
     </section>
 
     <section>   <!-- Testimonial -->
         <div id="testimonial">
-            <h2>
+            <h2 id="t1">
                 “Remont poszedł naprawdę sprawnie. Wszystko zrobione solidnie, bez kombinowania i na czas. Super kontakt i fajna ekipa — zdecydowanie polecam”
             </h2>
-            <p style="color: rgb(158, 158, 158);">Anna</p>
+            <p style="color: #977c49;">Anna</p>
         </div>
     </section>
 
-    <section>   <!-- Contact -->
+    <section id="contactSection">   <!-- Contact -->
+        <div id="testimonial" 
+        style="margin-top: -40vh; margin-bottom: -20vh;">
+            <h2>
+                Napisz do nas
+            </h2>
+            <p>
+                <br><span style="font-weight: 700;">p.jan.jankowski@gmail.com</span>
+                <br><br>Przemyslaw <span style="font-weight: 700;">516 132 240</span>
+                <br>Krystian <span style="font-weight: 700;">792 297 688</span>
+                <br>Bartosz <span style="font-weight: 700;">793 962 814</span>
+            </p>
+        </div>
+    </section>
 
+    <section id="footer">
+        <footer>
+            <hr style="margin: 128px 0;
+            border-color: rgba(0, 0, 0, 0.1);
+            border-left: none;">
+
+            <p>TEAM <br> JANKOWSKI</p>
+            <p style="font-size: 0.6rem;
+            font-weight: 400;">
+            © Copyright 2026 TEAM JANKOWSKI
+             - Wykonanie: Y3.DESIGN - 
+             Strony internetowe</p>
+        </footer>
     </section>
 </body>
 </html>

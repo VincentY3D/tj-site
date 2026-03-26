@@ -1,65 +1,67 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #fff;
     color: #000;
-    font-family: "droid-sans", sans-serif;
+    font-family: "clother", sans-serif;
     font-weight: 400;
     font-style: normal;
     transition: all 200ms;
 }
 
 h1 {
-    font-size: 32px;
-    font-family: "jaf-bernina-sans", sans-serif;
+    font-size: 3.2rem;
     font-weight: 700;
-    font-style: normal;
 }
 
 h2 {
-    font-size: 24px;
-    margin-bottom: 16px;
-    font-family: "jaf-bernina-sans", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
     font-weight: 700;
-    font-style: normal;
 }
 
 p {
-    font-size: 16px;
+    font-size: 1.4rem;
     max-width: 468px;
 }
 
 nav {
     width: 100%;
-    height: 48px;
+    height: 3rem;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
     background-color: #fff;
     display: flex;
-    padding: 16px;
+    padding: 1rem;
     align-items: center;
     text-align: center;
     justify-content: space-between;
     box-sizing: border-box;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
-
-nav a {
+a {
     color: #000;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: all 0.2s;
 }
 
-nav a:hover {
-    color: darkblue;
+a:hover {
+    color: #977c49;
 }
 
 .container {
     display: flex;
-    gap: 16px;
+    gap: 1rem;
 }
 
 #hero {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: gainsboro;
     display: flex;
@@ -68,15 +70,23 @@ nav a:hover {
     align-items: center;
     text-align: center;
     color: #fff;
+
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("img/hero.jpeg");
+
+    background-size: cover;
+    background-position: center;
 }
 
+
 #cta {
-    margin-top: 22px;
+    margin-top: 1.5rem;
     color: #fff;
     background-color: #000;
     border-radius: 16px;
     border-width: 0;
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
     transition: all 200ms;
 }
 
@@ -92,15 +102,35 @@ nav a:hover {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding: 64px;
+    padding: 4rem;
     box-sizing: border-box;
+    transition: all 0.1s;
 }
 
-#infoImage {
+.infoImage {
     height: 50vh;
     width: 50%;
     background-color: gainsboro;
     border-radius: 16px;
+    transition: all 0.1s;
+}
+
+#img1 {
+    background-image: url("img/ww.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+#img2 {
+    background-image: url("img/ug.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+#img3 {
+    background-image: url("img/po.jpeg");
+    background-size: cover;
+    background-position: center;
 }
 
 #infoText {
@@ -111,18 +141,19 @@ nav a:hover {
     justify-content: center;
     align-items: flex-start;
     text-align: left;
-    padding: 32px;
+    padding: 2rem;
     box-sizing: border-box;
+    transition: all 0.1s;
 }
 
 #infoSection {
-    margin: 64px 0;
+    margin: 4rem 0;
 }
 
 #testimonial {
     width: 100%;
     height: 80vh;
-    padding: 128px;
+    padding: 8rem;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -139,28 +170,31 @@ nav a:hover {
     width: 100%;
     overflow: hidden;
     position: relative;
-    padding: 40px 0;
+    padding: 3rem 0;
 }
   
 .scroll-track {
     display: flex;
-    gap: 30px;
+    gap: 1.5rem;
     width: max-content;
 }
   
 .card {
-    width: 15vh;
-    height: 20vh;
+    width: 10rem;
+    height: 15rem;
     background-size: cover;
     background-position: center;
-    border-radius: 12px;
+    border-radius: 16px;
     flex-shrink: 0;
     transition: transform 0.3s ease;
     background-color: gainsboro;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    transition: all 200ms;
 }
   
 .card:hover {
-    transform: scale(1.2);
+    transform: scale(1.25);
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.2);
 }
   
   /* Edge fade */
@@ -203,17 +237,17 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
   
-  /* Hover effect */
-  #backToTop:hover {
+/* Hover effect */
+#backToTop:hover {
     opacity: 1;
     transform: scale(1.1);
-  }
+}
   
-  /* arrow using two lines */
-  #backToTop::before,
-  #backToTop::after {
+/* arrow using two lines */
+#backToTop::before,
+#backToTop::after {
     content: "";
     position: absolute;
     width: 2px;      
@@ -221,24 +255,112 @@ nav a:hover {
     background-color: #fff;
     bottom: 18px;     
     left: 50%;        /* center horizontally */
-  }
+}
   
-  /* Left line */
-  #backToTop::before {
+/* Left line */
+#backToTop::before {
     transform: translateX(-50%) rotate(-45deg);
     transform-origin: top center;
-  }
+}
   
-  /* Right line */
-  #backToTop::after {
+/* Right line */
+#backToTop::after {
     transform: translateX(-50%) rotate(45deg);
     transform-origin: top center;
-  }
+}
   
-  /* Hide initially */
-  #backToTop.hidden {
+/* Hide initially */
+#backToTop.hidden {
     display: none;
-  }
-  
-  
-  
+}
+
+footer {
+    padding: 32px;
+    overflow: hidden;
+}
+
+footer p {
+    font-size: 5rem;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    font-weight: 700;
+}
+
+
+/* Mobile */
+@media (max-width: 768px) { 
+    #info {
+        display: block;
+        margin: auto 0;
+        height: fit-content;
+    }
+
+    .infoImage {
+        height: 30vh;
+        width: 100%;
+    }
+
+    #infoText {
+        height: fit-content;
+        width: 100%;
+    }
+
+    footer p {
+        font-size: 3rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    #t2 {
+        font-size: 1rem;
+        max-width: 80%;
+    }
+
+    #testimonial {
+        width: 100%;
+        height: 60vh;
+        padding: 1rem;
+        margin-bottom: 128px;
+    }
+}
+
+/* Small phones (optional) */
+@media (max-width: 480px) { 
+    footer p {
+        font-size: 2rem;
+    }
+    
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    #t2 {
+        font-size: 1rem;
+        max-width: 80%;
+    }
+
+    #testimonial {
+        width: 100%;
+        height: 60vh;
+        padding: 1rem;
+        margin-bottom: 128px;
+    }
+}
