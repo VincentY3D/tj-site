@@ -46,7 +46,6 @@
         display: block;
         grid-template-columns: repeat(1, 1fr);
         gap: 1rem;
-        height: fit-comtemt;
     }
 
     img {
