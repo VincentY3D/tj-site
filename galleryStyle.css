@@ -42,7 +42,8 @@
 }
 
 @media (max-width: 768px) { 
-    .image-grid {
-        display: collumn;
-    }
+.image-grid {
+    display: collumn;
+    grid-template-columns: repeat(1, 1fr);
+}
 }
