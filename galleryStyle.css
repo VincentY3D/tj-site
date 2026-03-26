@@ -47,4 +47,7 @@
         grid-template-columns: repeat(1, 1fr);
         gap: 1rem;
     }
+
+    img {
+        maring-bottom: 16px;
 }
