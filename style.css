@@ -364,3 +364,9 @@ footer p {
         margin-bottom: 128px;
     }
 }
+
+#hero {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("img/hero.jpeg");
+}
