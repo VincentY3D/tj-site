@@ -71,7 +71,9 @@ a:hover {
     text-align: center;
     color: #fff;
 
-    background-image: img/HERO.JPG;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("img/hero.jpeg");
 
     background-size: cover;
     background-position: center;
