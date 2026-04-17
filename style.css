@@ -300,9 +300,11 @@ footer p {
 }
 
 #copyright {
+    max-width: 768px;
     font-size: 0.6rem;
     font-weight: 400;
     line-height: 1.5;
+    text-align: left;
 }
 
 
@@ -366,6 +368,7 @@ footer p {
     font-size: 0.6rem;
     font-weight: 400;
     line-height: 1.5;
+    text-align: left;
 }
 
 /* Small phones (optional) */
@@ -403,6 +406,7 @@ footer p {
     font-size: 0.6rem;
     font-weight: 400;
     line-height: 1.5;
+    text-align: left;
     }
 }
 
