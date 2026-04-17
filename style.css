@@ -312,6 +312,7 @@ footer p {
         flex-direction: column-reverse;
         margin: auto 0;
         height: fit-content;
+        display: flex;
     }
 
     .infoImage {
