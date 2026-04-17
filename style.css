@@ -308,7 +308,7 @@ footer p {
     }
 
     #info2 {
-        display: block;
+        flex-direction: column-reverse;
         margin: auto 0;
         height: fit-content;
     }
