@@ -107,6 +107,18 @@ a:hover {
     transition: all 0.1s;
 }
 
+#info2 {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 4rem;
+    box-sizing: border-box;
+    transition: all 0.1s;
+}
+
 .infoImage {
     height: 50vh;
     width: 50%;
@@ -290,6 +302,12 @@ footer p {
 /* Mobile */
 @media (max-width: 768px) { 
     #info {
+        display: block;
+        margin: auto 0;
+        height: fit-content;
+    }
+
+    #info2 {
         display: block;
         margin: auto 0;
         height: fit-content;
