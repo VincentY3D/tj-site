@@ -137,6 +137,7 @@ a:hover {
     background-image: url("img/ug.jpeg");
     background-size: cover;
     background-position: center;
+    flex-direction: column;
 }
 
 #img3 {
