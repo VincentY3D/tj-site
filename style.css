@@ -299,6 +299,13 @@ footer p {
     font-weight: 700;
 }
 
+#copyright {
+    font-size: 0.6rem;
+    font-weight: 400;
+    max-width: 60%;
+    line-height: 1.5;
+}
+
 
 /* Mobile */
 @media (max-width: 768px) { 
