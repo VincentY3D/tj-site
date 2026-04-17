@@ -302,7 +302,6 @@ footer p {
 #copyright {
     font-size: 0.6rem;
     font-weight: 400;
-    max-width: 60%;
     line-height: 1.5;
 }
 
@@ -361,6 +360,11 @@ footer p {
     }
 }
 
+
+#copyright {
+    max-width: 512px;
+}
+
 /* Small phones (optional) */
 @media (max-width: 480px) { 
     footer p {
@@ -389,6 +393,10 @@ footer p {
         height: 60vh;
         padding: 1rem;
         margin-bottom: 128px;
+    }
+
+    #copyright {
+    max-width: 368px;
     }
 }
 
