@@ -1,113 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria</title>
 
-<!-- Favicon -->
-<link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="https://use.typekit.net/evr0zre.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="scrollImages.css">
+  <link rel="stylesheet" href="galleryStyle.css">
 
-<!-- Styles -->
-<link rel="stylesheet" href="https://use.typekit.net/evr0zre.css">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="scrollImages.css">
-<link rel="stylesheet" href="galleryStyle.css">
-
-<!-- Scripts -->
-<script src="script.js" defer></script>
-<script src="scroll.js" defer></script>
+  <script src="script.js" defer></script>
+  <script src="scroll.js" defer></script>
 </head>
-
-<script>
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.querySelector(".lightbox-img");
-  const closeBtn = document.querySelector(".lightbox-close");
-  const galleryImages = document.querySelectorAll(".image-grid img");
-
-  galleryImages.forEach((img) => {
-    img.addEventListener("click", () => {
-      lightboxImg.src = img.src;
-      lightboxImg.alt = img.alt || "Fullscreen preview";
-      lightbox.classList.add("active");
-      lightbox.setAttribute("aria-hidden", "false");
-      document.body.style.overflow = "hidden";
-    });
-  });
-
-  function closeLightbox() {
-    lightbox.classList.remove("active");
-    lightbox.setAttribute("aria-hidden", "true");
-    lightboxImg.src = "";
-    document.body.style.overflow = "";
-  }
-
-  closeBtn.addEventListener("click", closeLightbox);
-
-  lightbox.addEventListener("click", (e) => {
-    if (e.target === lightbox) {
-      closeLightbox();
-    }
-  });
-
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && lightbox.classList.contains("active")) {
-      closeLightbox();
-    }
-  });
-</script>
-
-<div id="lightbox" class="lightbox" aria-hidden="true">
-  <button class="lightbox-close" aria-label="Close preview">&times;</button>
-  <img class="lightbox-img" src="" alt="Fullscreen preview">
-</div>
-    
 <body>
-    <nav>
-        <a href="index.html">
-            <p style="font-weight: 800;">TEAM JANKOWSKI</p>
-        </a>
-        <div class="container">
-            
-        </div>
-    </nav>
+  <nav>
+    <a href="index.html">
+      <p style="font-weight: 800;">TEAM JANKOWSKI</p>
+    </a>
+    <div class="container"></div>
+  </nav>
 
-    <section id="gallery" style="margin-top: 4rem;">
-        <div class="Grid">
-            <h2>Galeria</h2>
-            <p>Zbiór naszych realizacji</p>
-            <div class="image-grid">
-                <img src="img2/1.jpg" id="gImg1">
-                <img src="img2/2.jpg" id="gImg2">
-                <img src="img2/3.jpg" id="gImg3">
-                <img src="img2/4.jpg" id="gImg4">
-                <img src="img2/5.jpg" id="gImg5">
-                <img src="img2/6.jpg" id="gImg6">
-                <img src="img2/7.jpg" id="gImg7">
-                <img src="img2/8.jpg" id="gImg8">
-                <img src="img2/9.jpg" id="gImg9">
-                <img src="img2/10.jpg" id="gImg10">
-                <img src="img2/11.jpg" id="gImg11">
-                <img src="img2/12.jpg" id="gImg12">
-                <img src="img2/13.jpg" id="gImg13">
-                <img src="img2/14.jpg" id="gImg14">
-                <img src="img2/15.jpg" id="gImg15">
-            </div>
-        </div>
-    </section>
+  <section id="gallery" style="margin-top: 4rem;">
+    <div class="Grid">
+      <h2>Galeria</h2>
+      <p>Zbiór naszych realizacji</p>
+      <div class="image-grid">
+        <img src="img2/1.jpg" id="gImg1" alt="">
+        <img src="img2/2.jpg" id="gImg2" alt="">
+        <img src="img2/3.jpg" id="gImg3" alt="">
+        <img src="img2/4.jpg" id="gImg4" alt="">
+        <img src="img2/5.jpg" id="gImg5" alt="">
+        <img src="img2/6.jpg" id="gImg6" alt="">
+        <img src="img2/7.jpg" id="gImg7" alt="">
+        <img src="img2/8.jpg" id="gImg8" alt="">
+        <img src="img2/9.jpg" id="gImg9" alt="">
+        <img src="img2/10.jpg" id="gImg10" alt="">
+        <img src="img2/11.jpg" id="gImg11" alt="">
+        <img src="img2/12.jpg" id="gImg12" alt="">
+        <img src="img2/13.jpg" id="gImg13" alt="">
+        <img src="img2/14.jpg" id="gImg14" alt="">
+        <img src="img2/15.jpg" id="gImg15" alt="">
+      </div>
+    </div>
+  </section>
 
-    <section id="footer">
-        <footer>
-            <hr style="margin: 128px 0;
-            border-color: rgba(0, 0, 0, 0.1);
-            border-left: none;">
+  <section id="footer">
+    <footer>
+      <hr style="margin: 128px 0; border-color: rgba(0, 0, 0, 0.1); border-left: none;">
+      <p>TEAM <br> JANKOWSKI</p>
+      <p style="font-size: 0.6rem; font-weight: 400;">
+        © Copyright 2026 TEAM JANKOWSKI - Wykonanie: Y3.DESIGN
+      </p>
+    </footer>
+  </section>
 
-            <p>TEAM <br> JANKOWSKI</p>
-            <p style="font-size: 0.6rem;
-            font-weight: 400;">
-            © Copyright 2026 TEAM JANKOWSKI
-             - Wykonanie: Y3.DESIGN</p>
-        </footer>
-    </section>
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close preview">&times;</button>
+    <img class="lightbox-img" src="" alt="Fullscreen preview">
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.querySelector(".lightbox-img");
+      const closeBtn = document.querySelector(".lightbox-close");
+      const galleryImages = document.querySelectorAll(".image-grid img");
+
+      galleryImages.forEach((img) => {
+        img.addEventListener("click", function () {
+          lightboxImg.src = this.src;
+          lightboxImg.alt = this.alt || "Fullscreen preview";
+          lightbox.classList.add("active");
+          lightbox.setAttribute("aria-hidden", "false");
+          document.body.style.overflow = "hidden";
+        });
+      });
+
+      function closeLightbox() {
+        lightbox.classList.remove("active");
+        lightbox.setAttribute("aria-hidden", "true");
+        lightboxImg.src = "";
+        document.body.style.overflow = "";
+      }
+
+      closeBtn.addEventListener("click", closeLightbox);
+
+      lightbox.addEventListener("click", function (e) {
+        if (e.target === lightbox) {
+          closeLightbox();
+        }
+      });
+
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && lightbox.classList.contains("active")) {
+          closeLightbox();
+        }
+      });
+    });
+  </script>
 </body>
 </html>
