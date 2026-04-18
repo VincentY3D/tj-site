@@ -1,41 +1,98 @@
-/* Overlay background */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+  max-width: 1800px;
+  padding: 0 4rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.image-grid img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  border-radius: 1rem;
+  display: block;
+  cursor: pointer;
+}
+
+#gallery h2,
+#gallery p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#gallery p {
+  max-width: 600px;
+}
+
+#gallery h2 {
+  margin-top: 8rem;
+}
+
+/* you do not need this on an <img>, so it can be removed */
+/* #gImg1 { background-image:url("img2/1.jpg"); } */
+
+/* LIGHTBOX */
 .lightbox {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    
-    display: none;
-    justify-content: center;
-    align-items: center;
-    
-    z-index: 9999;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
 }
 
-/* Image inside popup */
+.lightbox.active {
+  opacity: 1;
+  visibility: visible;
+}
+
 .lightbox-img {
-    max-width: 90%;
-    max-height: 90%;
-    border-radius: 12px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
 }
 
-/* Close button */
 .lightbox-close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 3rem;
-    color: white;
-    cursor: pointer;
-    user-select: none;
-    transition: 0.2s;
+  position: absolute;
+  top: 1.25rem;
+  right: 1.5rem;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 3rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
 }
 
-.lightbox-close:hover {
-    transform: scale(1.2);
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+
+  .image-grid img {
+    margin-bottom: 1rem;
+  }
+
+  .lightbox-close {
+    top: 0.75rem;
+    right: 1rem;
+    font-size: 2.5rem;
+  }
 }
 
 .image-grid {
