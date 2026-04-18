@@ -33,10 +33,6 @@
   margin-top: 8rem;
 }
 
-/* you do not need this on an <img>, so it can be removed */
-/* #gImg1 { background-image:url("img2/1.jpg"); } */
-
-/* LIGHTBOX */
 .lightbox {
   position: fixed;
   inset: 0;
@@ -93,60 +89,4 @@
     right: 1rem;
     font-size: 2.5rem;
   }
-}
-
-.image-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-
-    width: 100%;
-    max-width: 1800px;
-    padding: 0 4rem;
-    box-sizing: border-box;
-
-    margin: 0 auto;
-}
-
-
-
-.image-grid img {
-    width: 100%;
-    height: 40vh;
-    object-fit: cover;
-  
-    border-radius: 1rem;
-    display: block;
-}
-  
-#gallery h2,
-#gallery p {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#gallery p {
-    max-width: 600px;
-}
-
-#gallery h2 {
-    margin-top: 8rem;
-}
-
-#gImg1 {
-    background-image:url("img2/1.jpg");
-}
-
-@media (max-width: 768px) { 
-    .image-grid {
-        display: block;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 2rem;
-    }
-
-    img {
-        margin-bottom: 1rem;
-        padding-bottom: 1rem;
-    }
 }
