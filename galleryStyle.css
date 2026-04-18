@@ -74,6 +74,33 @@
   padding: 0;
 }
 
+.lightbox-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  border: none;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  user-select: none;
+  transition: 0.2s;
+}
+
+.lightbox-arrow:hover {
+  background: rgba(0,0,0,0.7);
+}
+
+.lightbox-arrow.left {
+  left: 20px;
+}
+
+.lightbox-arrow.right {
+  right: 20px;
+}
+
 @media (max-width: 768px) {
   .image-grid {
     grid-template-columns: 1fr;
