@@ -352,13 +352,13 @@ footer p {
       }
     
     #info {
-        display: block;
+        display: column-reverse;
         margin: auto 0;
         height: fit-content;
     }
 
     #info2 {
-        flex-direction: column-reverse;
+        flex-direction: column;
         margin: auto 0;
         height: fit-content;
         display: flex;
