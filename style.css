@@ -320,6 +320,10 @@ footer p {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
+.ServicesListMasterContainer {
+    display: flex;
+}
+
 
 /* Mobile */
 @media (max-width: 768px) { 
