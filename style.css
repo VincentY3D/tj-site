@@ -310,6 +310,17 @@ footer p {
     min-width: 0;
 }
 
+.ServicesListContainer {
+    width: 80%;
+    margin: auto;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 0.5rem;
+    height: fit-content;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
 
 /* Mobile */
 @media (max-width: 768px) { 
