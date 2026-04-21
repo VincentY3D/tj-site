@@ -310,7 +310,7 @@ footer p {
     min-width: 0;
 }
 
-.services-section {
+#services-section {
   width: 100%;
   display: flex;
   justify-content: center;
