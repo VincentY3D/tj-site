@@ -353,7 +353,8 @@ footer p {
       }
     
     #info {
-        display: column-reverse;
+        display: flex;
+        flex-direction: column-reverse;
         margin: auto 0;
         height: fit-content;
     }
